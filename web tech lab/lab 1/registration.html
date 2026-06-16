@@ -54,8 +54,69 @@
                         <td><label for="address">Address</label></td>
                         <td><textarea name="address" id="address" placeholder="Enter your full address"></textarea></td>
                     </tr>
+                    <tr>
+                        <td><label for="country">Country</label></td>
+                        <td>
+                            <select name="country" id="country">
+                                <option id="default" value="default">-----Select Country-----</option>
+                                <option id="Bangladesh" value="Bangladesh">Bangladesh</option>
+                                <option id="Argentina" value="Argentina">Argentina</option>
+                                <option id="Brazil" value="Brazil">Brazil</option>
+                                <option id="USA" value="USA">USA</option>
+                                <option id="UK" value="UK">UK</option>
+                            </select>
+                        </td>
+                    </tr>
                 </table>
             </fieldset>
+            <fieldset>
+                <legend>Account Information</legend>
+                <table>
+                    <tr>
+                        <td><label for="uname">Username*</label></td>
+                        <td><input type="text" id="uname" name="uname"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password*</label></td>
+                        <td><input type="password" id="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="conpassword">Confirm Password*</label></td>
+                        <td><input type="password" id="conpassword" name="conpassword"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Preference</legend>
+
+                <table>
+                    <tr>
+                        <td><label for="interests">Interests</label></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" id="sports" name="sports">
+                            <label for="sports">Sports</label>
+                            <input type="checkbox" id="music" name="music">
+                            <label for="music">Music</label>
+                            <br>
+                            <input type="checkbox" id="reading" name="reading">
+                            <label for="reading">Reading</label>
+                            <input type="checkbox" id="technology" name="technology">
+                            <label for="technology">Technology</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="condition" name="condition">
+                            <label for="condition"><font color="red">I agree with the terms and conditions*</font></label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <input type="submit" value="Register" name="submit" id="submit">
+            <input type="reset" value="Clear Form" name="reset" id="reset">
         </form>
     </div>
 </body>
