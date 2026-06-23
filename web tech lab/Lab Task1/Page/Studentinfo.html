@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="../Design/design.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <fieldset>
+            <legend>Student Information</legend>
+                <table>
+
+                    
+                    <tr>
+                        <td><label for="fname">Full name (Text)</label> </td> 
+                        <td><label for="email">Email Address</label></td>
+                    </tr>
+                    <tr>
+                        <td>   
+                        <input type="text" name="fname" id="fname" placeholder="Enter your full name">
+                        <td><input type="email" name="email" id="email" placeholder="your.email@example.com"></td>
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><label for="age">Age</label></td>
+
+                    </tr>
+                        <tr>
+                            <td><input type="password" id="password" name="password" placeholder="Enter your secure password"></td>
+                            <td><input type="number" name="age" id="age" placeholder="Enter your age"></td>
+                        </tr>
+                    <tr>
+                        <td><label for="expdate">Experimental Date</label></td>
+                        <td><label for="phone">Phone Number</label></td>
+
+                        </tr>
+                    <tr>
+                        <td><input type="date" name="expdate" id="expdate" placeholder=""></td>
+                        <td><input type="tel" name="phone" id="phone" placeholder="+880 XXXX XXXXXX"></td>
+                    </tr>
+                    
+                </table>
+        </fieldset>
+        <input type="submit" value="SUBMIT" id="submit" name="submit">
+        <input type="reset" value="CLEAR" id="reset" name="reset">
+        </form>
+        
+    </div>
+</body>
+</html>
