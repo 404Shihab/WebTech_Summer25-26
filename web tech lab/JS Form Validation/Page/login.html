@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../Design/style.css">
+    <script src="../JS/script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Login to your Account</h1>
+    </div>
+    <div class="container">
+        <form onsubmit="return collect_data()">
+            <fieldset>
+                <legend>Account Login</legend>
+                <table>
+                    <tr>
+                        <td><label for="username">username</label></td>
+                        <td><input type="text" name="username" id="username">
+                         <p style="color:red" id="unameError"></p></td>
+                       
+                    </tr>
+                    <tr>
+                        <td><label for="password">password</label></td>
+                        <td><input type="password" name="password" id="password">
+                        <p style="color:red" id="passError"></p></td></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <div class="btn">
+                <input type="submit" value="SUBMIT">
+            <br><br>
+            <input type="reset" value="RESET">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
