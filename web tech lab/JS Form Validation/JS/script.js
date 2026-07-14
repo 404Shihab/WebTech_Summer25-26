@@ -9,24 +9,31 @@ function collect_data(){
 
 function collect_username(){
     let uname = document.getElementById("username").value;
-    console.log(uname);
-
+   
     if(uname == ""){
         document.getElementById("unameError").innerHTML="*Username can not be empty";
         return false;
     }
+
+     console.log(uname);
 
     return true;
 }
 
 function collect_pass(){
     let pass = document.getElementById("password").value;
-    console.log(pass);
+    
 
      if(pass == ""){
         document.getElementById("passError").innerHTML="*Password can not be empty";
         return false;
     }
+    if(pass.length<8){
+        document.getElementById("passError").innerHTML="*Password must be more than 8 characters"
+        return false;
+    }
+
+    console.log(pass);
 
     return true;
 }

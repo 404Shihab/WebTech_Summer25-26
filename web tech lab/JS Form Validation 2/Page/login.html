@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../Design/style.css">
+    <script src="../JS/script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Login</h1>
+    </div>
+    <div class="container">
+        <form onsubmit="return collect_data()">
+            <fieldset>
+                <legend>Login</legend>
+                <table>
+                    <tr>
+                        <td><label for="uname">Username</label></td>
+                        <td><input type="text" name="uname" id="uname">
+                        <p id="unameError" style="color: red"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass">Password</label></td>
+                        <td><input type="password" name="pass" id="pass">
+                        <p id="passError" style="color: red;"></p>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <input type="submit" value="SUBMIT"> <br><br>
+            <input type="reset" value="RESET">
+        </form>
+    </div>
+    
+</body>
+</html>
