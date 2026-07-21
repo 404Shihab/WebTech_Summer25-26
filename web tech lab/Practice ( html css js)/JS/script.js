@@ -50,3 +50,41 @@ var dd =3;
 dd **= ee; // dd = dd * ee
 console.log(dd); // 3*3 = 9
 
+
+for (let i=0; i<5; i++) {
+    console.log("for loop " + i);
+}
+
+
+let j=0;
+
+while (j<4){
+    console.log("while loop " + j);
+    j++;
+}
+
+
+
+let k=0;
+do{
+    console.log("do while loop " +k);
+    k++;
+} while (k<4);
+
+// js array
+
+let array = [12,89,4, "hmm"];
+console.log(typeof(array));
+
+console.log(array);
+let element = array[0];
+console.log(element); //12
+console.log(array[5]); //undefined
+console.log(array[3]); //hmm
+
+array[0]=90;
+console.log(array); //(4) [90, 89, 4, 'hmm']
+array[4] = "wow";
+console.log(array); //(5) [90, 89, 4, 'hmm', 'wow']
+
+document.getElementById("array").innerHTML=array;
