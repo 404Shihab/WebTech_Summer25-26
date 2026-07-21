@@ -88,3 +88,28 @@ array[4] = "wow";
 console.log(array); //(5) [90, 89, 4, 'hmm', 'wow']
 
 document.getElementById("array").innerHTML=array;
+
+// js array methods 
+
+var friends = ["rohim", "karim", "jalim", "solim"];
+console.log(friends);
+
+console.log(friends.toString()); // rohim,karim,jalim,solim
+
+console.log(friends.join(" # ")); // rohim # karim # jalim # solim
+
+console.log("before pop: ", friends.length); //before pop:  4
+var x = friends.pop();
+console.log(friends); // ['rohim', 'karim', 'jalim']
+console.log("after pop: ", friends.length); // after pop: 3
+console.log(x); //solim
+
+console.log("before push: ", friends.length); //3
+var y = friends.push("dalim");
+console.log(friends); //(4) ['rohim', 'karim', 'jalim', 'dalim']
+console.log("after push: ", friends.length); // 4
+console.log(y); // 4  (not dalim .. contain length of the updated array after push)
+
+console.log(18*9);
+debugger;
+console.log("bye world");
